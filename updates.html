@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Updates - EMSI Class Representative Council</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (copied from index.html) -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section" id="logoSection" style="cursor:pointer;">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <h1>EMSI CLASS REPRESENTATIVE COUNCIL</h1>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="community.html">Community Links</a></li>
+                    <li><a href="updates.html" class="active">Email Updates</a></li>
+                </ul>
+            </nav>
+            <div class="report-header-button" style="position:absolute; top:20px; right:30px;">
+                <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>REPORT</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                </div>
+                <h2>EMSI CRC</h2>
+            </div>
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close navigation menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community Links</a></li>
+                <li><a href="updates.html" class="active">Email Updates</a></li>
+                <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-link">Report</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Email Updates</h1>
+                <p>Stay informed with the latest news, events, and important announcements from the EMSI Class Representative Council.</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Get the latest updates delivered directly to your inbox. Stay informed about:</p>
+                        <ul class="newsletter-benefits">
+                            <li><i class="fas fa-check"></i> Upcoming events and activities</li>
+                            <li><i class="fas fa-check"></i> Important announcements and deadlines</li>
+                            <li><i class="fas fa-check"></i> Student success stories and achievements</li>
+                            <li><i class="fas fa-check"></i> Council initiatives and updates</li>
+                            <li><i class="fas fa-check"></i> Academic resources and opportunities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="newsletter-form-container">
+                        <form id="newsletterForm" class="newsletter-form">
+                            <h3>Join Our Mailing List</h3>
+                            
+                            <div class="form-group">
+                                <label for="newsletterEmail">Email Address *</label>
+                                <input type="email" id="newsletterEmail" name="email" required placeholder="Enter your email address">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newsletterName">Full Name</label>
+                                <input type="text" id="newsletterName" name="name" placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newsletterYear">Academic Year</label>
+                                <select id="newsletterYear" name="year">
+                                    <option value="">Select your year</option>
+                                    <option value="first">First Year</option>
+                                    <option value="second">Second Year</option>
+                                    <option value="third">Third Year</option>
+                                    <option value="fourth">Fourth Year</option>
+                                    <option value="graduate">Graduate Student</option>
+                                    <option value="alumni">Alumni</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newsletterProgram">Program of Study</label>
+                                <select id="newsletterProgram" name="program">
+                                    <option value="">Select your program</option>
+                                    <option value="computer-science">Computer Science</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="business">Business Administration</option>
+                                    <option value="medicine">Medicine</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Newsletter Preferences</label>
+                                <div class="preference-options">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="preferences" value="events" checked>
+                                        <span class="checkmark"></span>
+                                        Events & Activities
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="preferences" value="academic" checked>
+                                        <span class="checkmark"></span>
+                                        Academic Updates
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="preferences" value="council" checked>
+                                        <span class="checkmark"></span>
+                                        Council News
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="preferences" value="resources">
+                                        <span class="checkmark"></span>
+                                        Resources & Opportunities
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to receiving emails from EMSI CRC
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="subscribe-btn">
+                                <i class="fas fa-envelope"></i>
+                                Subscribe to Newsletter
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Archive -->
+        <section class="newsletter-archive">
+            <div class="container">
+                <h2>Recent Newsletters</h2>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <div class="archive-date">September 15, 2024</div>
+                        <h3>Welcome to the New Academic Year</h3>
+                        <p>Get ready for an exciting year ahead with new initiatives, events, and opportunities for student engagement.</p>
+                        <a href="#" class="archive-link">Read Newsletter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="archive-item">
+                        <div class="archive-date">September 8, 2024</div>
+                        <h3>Fall Festival 2024 - Save the Date</h3>
+                        <p>Join us for our biggest event of the semester featuring food, games, and entertainment for the entire EMSI community.</p>
+                        <a href="#" class="archive-link">Read Newsletter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="archive-item">
+                        <div class="archive-date">September 1, 2024</div>
+                        <h3>Student Council Elections</h3>
+                        <p>Nominations are now open for various student council positions. Make your voice heard by running for office!</p>
+                        <a href="#" class="archive-link">Read Newsletter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="archive-item">
+                        <div class="archive-date">August 25, 2024</div>
+                        <h3>New Study Spaces Available</h3>
+                        <p>The library has opened new collaborative study spaces equipped with modern technology and comfortable seating.</p>
+                        <a href="#" class="archive-link">Read Newsletter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unsubscribe Section -->
+        <section class="unsubscribe-section">
+            <div class="container">
+                <div class="unsubscribe-content">
+                    <h2>Need to Unsubscribe?</h2>
+                    <p>If you no longer wish to receive our newsletter, you can unsubscribe at any time using the link in our emails or by contacting us directly.</p>
+                    <div class="unsubscribe-options">
+                        <a href="mailto:unsubscribe@emsi-crc.com" class="unsubscribe-btn">
+                            <i class="fas fa-envelope"></i>
+                            Email Us
+                        </a>
+                        <a href="contact.html" class="unsubscribe-btn">
+                            <i class="fas fa-phone"></i>
+                            Contact Form
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                        </div>
+                        <h3>EMSI CLASS REPRESENTATIVE COUNCIL</h3>
+                    </div>
+                    <p>Built for the EMSI community.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> EMSI CLASS REPRESENTATIVE COUNCIL. All rights reserved.</p>
+                <p class="developer-credits">Développé par <a href="https://www.linkedin.com/in/aymane-fakihi-9a3435335/" target="_blank" rel="noopener noreferrer">AYMANE FAKIHI</a> et <a href="https://www.linkedin.com/in/yezziani/" target="_blank" rel="noopener noreferrer">YASSINE EZZIANI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logoSection = document.getElementById('logoSection');
+        var sidebar = document.getElementById('sidebar');
+        var closeSidebar = document.getElementById('closeSidebar');
+        // Open sidebar on logo click
+        if (logoSection && sidebar) {
+            logoSection.addEventListener('click', function(e) {
+                sidebar.classList.add('open');
+                e.stopPropagation();
+            });
+        }
+        // Close sidebar on close button
+        if (closeSidebar && sidebar) {
+            closeSidebar.addEventListener('click', function(e) {
+                sidebar.classList.remove('open');
+                e.stopPropagation();
+            });
+        }
+        // Close sidebar when clicking outside
+        document.addEventListener('mousedown', function(e) {
+            if (sidebar.classList.contains('open')) {
+                if (!sidebar.contains(e.target) && e.target !== logoSection) {
+                    sidebar.classList.remove('open');
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - EMSI Class Representative Council</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (copied from index.html) -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section" id="logoSection" style="cursor:pointer;">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <h1>EMSI CLASS REPRESENTATIVE COUNCIL</h1>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="report-header-button" style="position:absolute; top:20px; right:30px;">
+                <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>REPORT</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar (copied from index.html) -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                </div>
+                <h2>EMSI CRC</h2>
+            </div>
+            <button class="close-sidebar" id="closeSidebar" aria-label="Close navigation menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community Links</a></li>
+                <li><a href="updates.html">Email Updates</a></li>
+                <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-link">Report</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Report button moved to header -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Student Resources</h1>
+                <p>Download important documents, guides, and resources to support your academic journey at EMSI.</p>
+            </div>
+        </section>
+
+        <!-- Resource Categories -->
+        <section class="resource-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">All Resources</button>
+                    <button class="category-btn" data-category="academic">Academic</button>
+                    <button class="category-btn" data-category="forms">Forms</button>
+                    <button class="category-btn" data-category="guides">Guides</button>
+                    <button class="category-btn" data-category="schedules">Schedules</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Grid -->
+        <section class="resources-section">
+            <div class="container">
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Resources will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Downloads -->
+        <section class="quick-downloads">
+            <div class="container">
+                <h2>Quick Downloads</h2>
+                <div class="download-links">
+                    <a href="#" class="download-link" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <div class="download-info">
+                            <span class="download-title">Academic Calendar 2024-2025</span>
+                            <span class="download-size">PDF • 2.3 MB</span>
+                        </div>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" class="download-link" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <div class="download-info">
+                            <span class="download-title">Student Handbook</span>
+                            <span class="download-size">PDF • 5.1 MB</span>
+                        </div>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" class="download-link" download>
+                        <i class="fas fa-file-excel"></i>
+                        <div class="download-info">
+                            <span class="download-title">Course Schedule Template</span>
+                            <span class="download-size">Excel • 1.2 MB</span>
+                        </div>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" class="download-link" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <div class="download-info">
+                            <span class="download-title">Campus Map</span>
+                            <span class="download-size">PDF • 3.8 MB</span>
+                        </div>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
+                        </div>
+                        <h3>EMSI CLASS REPRESENTATIVE COUNCIL</h3>
+                    </div>
+                    <p>Built for the EMSI community.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> EMSI CLASS REPRESENTATIVE COUNCIL. All rights reserved.</p>
+                <p class="developer-credits">Développé par <a href="https://www.linkedin.com/in/aymane-fakihi-9a3435335/" target="_blank" rel="noopener noreferrer">AYMANE FAKIHI</a> et <a href="https://www.linkedin.com/in/yezziani/" target="_blank" rel="noopener noreferrer">YASSINE EZZIANI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logoSection = document.getElementById('logoSection');
+        var sidebar = document.getElementById('sidebar');
+        var closeSidebar = document.getElementById('closeSidebar');
+        // Open sidebar on logo click
+        if (logoSection && sidebar) {
+            logoSection.addEventListener('click', function(e) {
+                sidebar.classList.add('open');
+                e.stopPropagation();
+            });
+        }
+        // Close sidebar on close button
+        if (closeSidebar && sidebar) {
+            closeSidebar.addEventListener('click', function(e) {
+                sidebar.classList.remove('open');
+                e.stopPropagation();
+            });
+        }
+        // Close sidebar when clicking outside
+        document.addEventListener('mousedown', function(e) {
+            if (sidebar.classList.contains('open')) {
+                if (!sidebar.contains(e.target) && e.target !== logoSection) {
+                    sidebar.classList.remove('open');
+                }
+            }
+        });
+    });
+    </script>
+    <script src="resources.js"></script>
+</body>
+</html>
+

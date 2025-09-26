@@ -23,7 +23,7 @@
                 </div>
             </div>
             <nav class="nav-desktop">
-                <ul>
+                <ul style="display:flex; align-items:center;">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -31,6 +31,11 @@
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button id="hamburger" aria-label="Open sidebar" style="background:#0a2212; border:none; margin-left:24px; margin-right:24px; cursor:pointer; display:flex; flex-direction:column; justify-content:center; align-items:center; height:40px; width:40px; border-radius:8px;">
+                    <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
+                    <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
+                    <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
+                </button>
             </nav>
             <div class="report-header-button" style="position:absolute; top:20px; right:30px;">
                 <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion">
@@ -64,7 +69,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="community.html">Community Links</a></li>
                 <li><a href="updates.html">Email Updates</a></li>
-                <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-link">Report</a></li>
+                <li><a href="mailto:emsi@ezziani.com?subject=Report an Issue or Suggestion" class="report-link">Report</a></li>
             </ul>
         </nav>
     </aside>
@@ -260,7 +265,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="community.html">Community</a></li>
-                        <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
+                        <li><a href="mailto:emsi@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
                     </ul>
                 </div>
                 
@@ -284,12 +289,12 @@
     <script src="script.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var logoSection = document.getElementById('logoSection');
         var sidebar = document.getElementById('sidebar');
         var closeSidebar = document.getElementById('closeSidebar');
-        // Open sidebar on logo click
-        if (logoSection && sidebar) {
-            logoSection.addEventListener('click', function(e) {
+        var hamburger = document.getElementById('hamburger');
+        // Open sidebar on hamburger click only
+        if (hamburger && sidebar) {
+            hamburger.addEventListener('click', function(e) {
                 sidebar.classList.add('open');
                 e.stopPropagation();
             });
@@ -304,7 +309,7 @@
         // Close sidebar when clicking outside
         document.addEventListener('mousedown', function(e) {
             if (sidebar.classList.contains('open')) {
-                if (!sidebar.contains(e.target) && e.target !== logoSection) {
+                if (!sidebar.contains(e.target) && e.target !== hamburger) {
                     sidebar.classList.remove('open');
                 }
             }

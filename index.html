@@ -9,42 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-section" id="logoSection" style="cursor:pointer;">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
-                    </div>
-                    <div class="logo-text">
-                        <h1>EMSI INFO</h1>
-                    </div>
-                </div>
-            </div>
-            <nav class="nav-desktop" style="display:flex; align-items:center;">
-                <ul style="display:flex; align-items:center;">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-                <!-- Hamburger icon between About and Report -->
-                <button id="hamburger" aria-label="Open sidebar" style="background:#0a2212; border:none; margin-left:24px; margin-right:24px; cursor:pointer; display:flex; flex-direction:column; justify-content:center; align-items:center; height:40px; width:40px; border-radius:8px;">
+        <!-- Header -->
+        <header class="header" style="width:100%; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+            <div class="header-new" style="display:flex; align-items:center; width:100%; min-height:70px; background:#0a2212;">
+                <!-- Hamburger (3 lines) -->
+                <button id="hamburger" aria-label="Open sidebar" style="background:#0a2212; border:none; margin-left:0.5cm; margin-right:24px; cursor:pointer; display:flex; flex-direction:column; justify-content:center; align-items:center; height:40px; width:40px; border-radius:8px;">
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                 </button>
-            </nav>
-            <div class="report-header-button" style="position:absolute; top:20px; right:30px;">
-                <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion">
+                <!-- Logo -->
+                <div class="logo-section" id="logoSection" style="cursor:pointer; display:flex; align-items:center; margin-right:12px;">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image" style="height:48px; width:auto;">
+                        </div>
+                        <div class="logo-text" style="margin-left:10px; margin-right:32px;">
+                    <h1 style="font-size:2em; font-weight:600; margin:0; color:#fff;">EMSI INFO</h1>
+                </div>
+                    </div>
+                </div>
                 
-                    <span>Contact</span>
-                </a>
+                <!-- Contact Button -->
+                <!-- Contact Button moved after navigation -->
+                <!-- Navigation Pages -->
+                <nav class="nav-desktop" style="margin-right:0.5cm;">
+                    <ul style="display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0;">
+                        <li><a href="index.html" style="text-decoration:none; color:#fff; font-weight:500;">Home</a></li>
+                        <li><a href="news.html" style="text-decoration:none; color:#fff; font-weight:500;">News</a></li>
+                        <li><a href="services.html" style="text-decoration:none; color:#fff; font-weight:500;">Services</a></li>
+                        <li><a href="resources.html" style="text-decoration:none; color:#fff; font-weight:500;">Resources</a></li>
+                        <li><a href="about.html" style="text-decoration:none; color:#fff; font-weight:500;">About</a></li>
+                        <li><div class="report-header-button" style="margin-left:18px;">
+                            <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion" style="padding:8px 18px; background:#0a2212; color:#fff; border-radius:6px; font-weight:500; text-decoration:none; font-size:1em; border:1px solid #fff;">Contact</a>
+                        </div></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
@@ -90,61 +92,115 @@
         <!-- Highlight Cards -->
         <section class="highlights">
             <div class="container">
-                <h2>What We Offer</h2>
+                <h2>Services</h2>
                 <div class="cards-grid">
                     <div class="card">
                         <div class="card-icon">
-                            <i class="fas fa-calendar-alt"></i>
+                            <i class="fas fa-book"></i>
                         </div>
-                        <h3>Events</h3>
-                        <p>Stay updated with upcoming student events, meetings, and activities organized by the council.</p>
-                        <a href="news.html" class="card-link">View Events <i class="fas fa-arrow-right"></i></a>
+                        <h3>StudyHub</h3>
+                        <p>The Largest EMSI Archive. One Central Hub for everything you need from documents to exams and so much more</p>
+                        <a href="#" class="card-link">StudyHub <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="card">
                         <div class="card-icon">
                             <i class="fas fa-hands-helping"></i>
                         </div>
-                        <h3>Services</h3>
-                        <p>Access various student services and resources to support your academic journey at EMSI.</p>
-                        <a href="services.html" class="card-link">Explore Services <i class="fas fa-arrow-right"></i></a>
+                        <h3>EMSI CONNECT</h3>
+                        <p>Comming soon</p>
+                        <a href="#" class="card-link">EMSI CONNECT <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
                     <div class="card">
                         <div class="card-icon">
                             <i class="fas fa-book"></i>
                         </div>
-                        <h3>Resources</h3>
-                        <p>Download important documents, exam schedules, and helpful guides for your studies.</p>
-                        <a href="resources.html" class="card-link">Browse Resources <i class="fas fa-arrow-right"></i></a>
+                        <h3>EMSI DELEGATION</h3>
+                        <p>Comming soon</p>
+                        <a href="#" class="card-link">EMSI DELEGATION <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Quick Stats -->
-        <section class="stats">
+        <!-- Quick Links Section -->
+        <section class="highlights">
             <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Students Represented</div>
+                <h2>Quick Links</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Portail EMSI</h3>
+                        <p>Accédez au portail officiel EMSI pour les étudiants et les enseignants.</p>
+                        <a href="https://portail.emsi.ac.ma/auth" class="card-link">Portail EMSI <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">25+</div>
-                        <div class="stat-label">Events Organized</div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>EMSI Community</h3>
+                        <p>Rejoignez la communauté EMSI pour échanger et collaborer.</p>
+                        <a href="https://chat.whatsapp.com/LjNXaDGZ1tMCyEWBU4r1Vo" class="card-link">EMSI Community <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Services Provided</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Student Focused</div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Demander un tuteur</h3>
+                        <p>Besoin d'aide ? Demandez un tuteur pour vous accompagner.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScDYOPC-nWKhyRlsH7Rp6MLEiXbtS9OVIrik3i08L8Nz8G7Ww/viewform" class="card-link">Demander un tuteur <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- NEWS Section -->
+        <section class="highlights">
+            <div class="container">
+                <h2>NEWS</h2>
+                <div class="cards-grid" id="homeNewsGrid">
+                    <!-- News cards will be injected here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL MEDIA Section -->
+        <section class="highlights">
+            <div class="container">
+                <h2>SOCIAL MEDIA</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #E4405F, #FCAF45);">
+                            <i class="fab fa-instagram" style="font-size:2.2em;"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>Suivez-nous sur Instagram pour les dernières mises à jour et photos.</p>
+                        <a href="https://www.instagram.com/emsidelegation" class="card-link">Instagram <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0077B5, #00C6FB);">
+                            <i class="fab fa-linkedin" style="font-size:2.2em;"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connectez-vous avec nous sur LinkedIn pour les opportunités professionnelles.</p>
+                        <a href="https://www.linkedin.com/company/emsidelegation/" class="card-link">LinkedIn <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                            <i class="fab fa-whatsapp" style="font-size:2.2em;"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Rejoignez notre groupe WhatsApp pour discuter et recevoir des notifications.</p>
+                        <a href="https://chat.whatsapp.com/LjNXaDGZ1tMCyEWBU4r1Vo" class="card-link">WhatsApp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
 
         
         </section>
@@ -152,49 +208,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="community.html">Community</a></li>
-                        <li><a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
+        <div class="footer-bottom">
                 <p>&copy; <span id="currentYear"></span> EMSI Class Representatives Council. </p>
                 <p class="developer-credits">Développé par <a href="https://www.linkedin.com/in/aymane-fakihi-9a3435335/" target="_blank" rel="noopener noreferrer">AYMANE FAKIHI</a> et <a href="https://www.linkedin.com/in/yezziani/" target="_blank" rel="noopener noreferrer">YASSINE EZZIANI</a></p>
-            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+<script src="news.js"></script>
 <script>
 // Open sidebar when clicking the logo
 document.addEventListener('DOMContentLoaded', function() {
@@ -223,6 +244,30 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Inject last 3 news cards into home page
+    if (typeof newsData !== 'undefined') {
+        var homeNewsGrid = document.getElementById('homeNewsGrid');
+        if (homeNewsGrid) {
+            var sortedNews = newsData.slice().sort(function(a, b) {
+                return new Date(b.date) - new Date(a.date);
+            });
+            var lastThree = sortedNews.slice(0, 3);
+            lastThree.forEach(function(news) {
+                var card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-icon">
+                        <img src="${news.image}" alt="${news.title}" style="width:100px;height:70px;object-fit:cover;border-radius:8px;">
+                    </div>
+                    <h3>${news.title}</h3>
+                    <p>${news.summary}</p>
+                    <span style="font-size:0.9em;color:#888;">${new Date(news.date).toLocaleDateString()}</span>
+                `;
+                homeNewsGrid.appendChild(card);
+            });
+        }
+    }
 });
 </script>
 </body>

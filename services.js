@@ -5,7 +5,7 @@ const servicesData = [
         title: "Student Portal",
         description: "Access your academic records, grades, course schedules, and important announcements all in one place.",
         category: "academic",
-        url: "https://portal.emsi.edu",
+        url: "https://portail.emsi.ac.ma",
         icon: "fas fa-graduation-cap",
         featured: true
     },

@@ -9,43 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (copied from index.html) -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-section" id="logoSection" style="cursor:pointer;">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
-                    </div>
-                    <div class="logo-text">
-                        <h1>EMSI CLASS REPRESENTATIVE COUNCIL</h1>
-                    </div>
-                </div>
-            </div>
-            <nav class="nav-desktop">
-                <ul style="display:flex; align-items:center;">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html" class="active">News</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- Hamburger icon between About and Report -->
-                <button id="hamburger" aria-label="Open sidebar" style="background:#0a2212; border:none; margin-left:24px; margin-right:24px; cursor:pointer; display:flex; flex-direction:column; justify-content:center; align-items:center; height:40px; width:40px; border-radius:8px;">
+    <!-- Header -->
+        <header class="header" style="width:100%; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+            <div class="header-new" style="display:flex; align-items:center; width:100%; min-height:70px; background:#0a2212;">
+                <!-- Hamburger (3 lines) -->
+                <button id="hamburger" aria-label="Open sidebar" style="background:#0a2212; border:none; margin-left:0.5cm; margin-right:24px; cursor:pointer; display:flex; flex-direction:column; justify-content:center; align-items:center; height:40px; width:40px; border-radius:8px;">
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                     <span style="display:block; width:30px; height:4px; background:#fff; margin:4px 0; border-radius:2px;"></span>
                 </button>
-            </nav>
-            <div class="report-header-button" style="position:absolute; top:20px; right:30px;">
-                <a href="mailto:emsi@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <span>REPORT</span>
+                <!-- Logo -->
+                <a href="index.html" class="logo-section" id="logoSection" style="cursor:pointer; display:flex; align-items:center; margin-right:12px; text-decoration:none;">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image" style="height:48px; width:auto;">
+                        </div>
+                        <div class="logo-text" style="margin-left:10px; margin-right:32px;">
+                            <h1 style="font-size:2em; font-weight:600; margin:0; color:#fff;">EMSI INFO</h1>
+                        </div>
+                    </div>
                 </a>
+                
+                <!-- Contact Button -->
+                <!-- Contact Button moved after navigation -->
+                <!-- Navigation Pages -->
+                <nav class="nav-desktop" style="margin-right:0.5cm;">
+                    <ul style="display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0;">
+                        <li><a href="index.html" style="text-decoration:none; color:#fff; font-weight:500;">Home</a></li>
+                        <li><a href="services.html" style="text-decoration:none; color:#fff; font-weight:500;">Services</a></li>
+                        <li><a href="resources.html" style="text-decoration:none; color:#fff; font-weight:500;">Resources</a></li>
+                        <li><a href="news.html" style="text-decoration:none; color:#fff; font-weight:500;">News</a></li>
+                        <li><a href="about.html" style="text-decoration:none; color:#fff; font-weight:500;">About</a></li>
+                        <li><div class="report-header-button" style="margin-left:18px;">
+                            <a href="mailto:e@ezziani.com?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion" style="padding:8px 18px; background:#0a2212; color:#fff; border-radius:6px; font-weight:500; text-decoration:none; font-size:1em; border:1px solid #fff;">Contact</a>
+                        </div></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
     <!-- Sidebar (copied from index.html) -->
     <aside class="sidebar" id="sidebar">
@@ -118,42 +119,46 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <img src="assets/logo.png" alt="EMSI CRC Logo" class="logo-image">
-                        </div>
-                        <h3>EMSI CLASS REPRESENTATIVE COUNCIL</h3>
-                    </div>
-                    <p>Built for the EMSI community.</p>
-                </div>
+                
                 
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="index.html">Portail Etudiant</a></li>
+                        <li><a href="news.html">EMSI Communities</a></li>
+                        <li><a href="services.html">Demander un Tuteur</a></li>
+                        <li><a href="resources.html">Career Center</a></li>
+                        <li><a href="https://www.emsi.ma">emsi.ma</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4>EMSI INFO</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="community.html">Community</a></li>
-                        <li><a href="mailto:emsi@ezziani.com?subject=Report an Issue or Suggestion">Report Issue</a></li>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                         <li><a href="services.html">Services</a></li>
+                         <li><a href="ressources.html">Ressources</a></li>
+                         <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                         <li><a href="contact.html">EMSI StudyHub</a></li>
+                         <li><a href="services.html">EMSI Connect</a></li>
+                         <li><a href="ressources.html">EMSI DELEGATION</a></li>
+                         
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/emsidelegation" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/emsidelegation/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://chat.whatsapp.com/LjNXaDGZ1tMCyEWBU4r1Vo" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

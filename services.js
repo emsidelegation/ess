@@ -2,148 +2,50 @@
 const servicesData = [
     {
         id: 1,
-        title: "Student Portal",
-        description: "Access your academic records, grades, course schedules, and important announcements all in one place.",
-        category: "academic",
-        url: "https://portail.emsi.ac.ma",
+        title: "EMSI StudyHub",
+        description: "The Largest EMSI Archive. One Central Hub for everything you need from documents to exams and so much more",
+        category: "academique",
+        url: "#",
         icon: "fas fa-graduation-cap",
-        featured: true
+        featured: false
     },
     {
         id: 2,
-        title: "Library Management System",
-        description: "Search and reserve books, access digital resources, and manage your library account online.",
-        category: "academic",
-        url: "https://library.emsi.edu",
+        title: "EMSI Connect",
+        description: "Comming soon",
+        category: "communaute",
+        url: "#",
         icon: "fas fa-book",
         featured: false
     },
     {
         id: 3,
-        title: "Academic Calendar",
-        description: "Stay updated with important dates, deadlines, holidays, and academic events throughout the year.",
-        category: "academic",
-        url: "https://calendar.emsi.edu",
+        title: "EMSI Communities",
+        description: ".",
+        category: "communaute",
+        url: "https://linktr.ee/emsidelegation",
         icon: "fas fa-calendar-alt",
-        featured: true
+        featured: false
     },
     {
         id: 4,
-        title: "Course Registration",
-        description: "Register for courses, view prerequisites, and manage your academic schedule for each semester.",
-        category: "academic",
-        url: "https://registration.emsi.edu",
+        title: "EMSI DELEGATION",
+        description: "comming soon",
+        category: "delegation",
+        url: "#",
         icon: "fas fa-clipboard-list",
         featured: false
     },
     {
         id: 5,
-        title: "Student Email System",
-        description: "Access your official student email account for communication with faculty and administration.",
-        category: "technology",
-        url: "https://mail.emsi.edu",
+        title: "EMSI LEVEL UP",
+        description: "comming soon",
+        category: "academique",
+        url: "#",
         icon: "fas fa-envelope",
         featured: false
     },
-    {
-        id: 6,
-        title: "Learning Management System",
-        description: "Access course materials, submit assignments, participate in discussions, and track your progress.",
-        category: "technology",
-        url: "https://lms.emsi.edu",
-        icon: "fas fa-laptop",
-        featured: true
-    },
-    {
-        id: 7,
-        title: "WiFi Network Access",
-        description: "Connect to the campus WiFi network with your student credentials for internet access.",
-        category: "technology",
-        url: "https://wifi.emsi.edu",
-        icon: "fas fa-wifi",
-        featured: false
-    },
-    {
-        id: 8,
-        title: "Student Support Center",
-        description: "Get help with academic, technical, and administrative issues from our dedicated support team.",
-        category: "support",
-        url: "https://support.emsi.edu",
-        icon: "fas fa-hands-helping",
-        featured: true
-    },
-    {
-        id: 9,
-        title: "Career Services",
-        description: "Access job opportunities, resume building tools, interview preparation, and career counseling.",
-        category: "support",
-        url: "https://careers.emsi.edu",
-        icon: "fas fa-briefcase",
-        featured: false
-    },
-    {
-        id: 10,
-        title: "Financial Aid Portal",
-        description: "Apply for scholarships, view financial aid status, and manage student loan information.",
-        category: "support",
-        url: "https://finaid.emsi.edu",
-        icon: "fas fa-dollar-sign",
-        featured: false
-    },
-    {
-        id: 11,
-        title: "Counseling Services",
-        description: "Access mental health support, academic counseling, and personal development resources.",
-        category: "wellness",
-        url: "https://counseling.emsi.edu",
-        icon: "fas fa-heart",
-        featured: true
-    },
-    {
-        id: 12,
-        title: "Health Services",
-        description: "Schedule appointments, access health records, and find information about campus health services.",
-        category: "wellness",
-        url: "https://health.emsi.edu",
-        icon: "fas fa-user-md",
-        featured: false
-    },
-    {
-        id: 13,
-        title: "Fitness Center",
-        description: "Access gym facilities, fitness classes, and wellness programs available to all students.",
-        category: "wellness",
-        url: "https://fitness.emsi.edu",
-        icon: "fas fa-dumbbell",
-        featured: false
-    },
-    {
-        id: 14,
-        title: "Housing Portal",
-        description: "Apply for on-campus housing, manage room assignments, and access housing-related services.",
-        category: "support",
-        url: "https://housing.emsi.edu",
-        icon: "fas fa-home",
-        featured: false
-    },
-    {
-        id: 15,
-        title: "Transportation Services",
-        description: "Access campus shuttle schedules, parking permits, and transportation-related information.",
-        category: "support",
-        url: "https://transport.emsi.edu",
-        icon: "fas fa-bus",
-        featured: false
-    },
-    {
-        id: 16,
-        title: "Dining Services",
-        description: "View meal plans, dining hall hours, menus, and manage your dining account balance.",
-        category: "support",
-        url: "https://dining.emsi.edu",
-        icon: "fas fa-utensils",
-        featured: false
-    }
+
 ];
 
 // DOM Elements

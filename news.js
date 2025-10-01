@@ -3,8 +3,8 @@ const newsData = [
     {
         id: 1,
         title: "Rentrée Scolaire de l’Année Universitaire 2025/2026",
-        summary: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025.Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
-        content: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025.Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
+        summary: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025. Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
+        content: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025. Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
         category: "avis",
         date: "2025-09-30",
         image: "https://objective-harlequin-x1dc8kynph.edgeone.app/Frame%20126.png",

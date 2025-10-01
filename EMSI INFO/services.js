@@ -3,7 +3,7 @@ const servicesData = [
     {
         id: 1,
         title: "EMSI StudyHub",
-        description: "The Largest EMSI Archive. One Central Hub for everything you need from documents to exams and so much more",
+        description: "La plus grande archive EMSI. Un hub central pour tout ce dont vous avez besoin : documents, corrections, examens et bien plus encore.",
         category: "academique",
         url: "#",
         icon: "fas fa-graduation-cap",
@@ -12,7 +12,7 @@ const servicesData = [
     {
         id: 2,
         title: "EMSI Connect",
-        description: "Comming soon",
+        description: "Le réseau des étudiants EMSI où vous pouvez trouver des étudiants qui partagent vos besoins : logement, campus ou classes.",
         category: "communaute",
         url: "#",
         icon: "fas fa-book",
@@ -21,7 +21,7 @@ const servicesData = [
     {
         id: 3,
         title: "EMSI Communities",
-        description: ".",
+        description: "Rejoignez votre communauté EMSI pour recevoir toutes les annonces importantes et suivre les dernières actualités.",
         category: "communaute",
         url: "https://linktr.ee/emsidelegation",
         icon: "fas fa-calendar-alt",
@@ -39,10 +39,10 @@ const servicesData = [
     {
         id: 5,
         title: "EMSI LEVEL UP",
-        description: "comming soon",
+        description: "Si vous avez besoin d’aide pour vos études ou que vous rencontrez des lacunes dans certaines matières, le programme de tutorat EMSI LEVEL UP est là pour vous accompagner.",
         category: "academique",
         url: "#",
-        icon: "fas fa-envelope",
+        icon: "fas fa-user-graduate",
         featured: false
     },
 
@@ -211,7 +211,7 @@ const servicesStyles = `
         transition: var(--transition);
         display: flex;
         flex-direction: column;
-        border: 1px solid var(--light-gray);
+        border: 2px solid var(--dark-green); /* dark green outline for boxes */
     }
     
     .service-card:hover {

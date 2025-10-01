@@ -2,164 +2,75 @@
 const resourcesData = [
     {
         id: 1,
-        title: "Academic Calendar 2024-2025",
-        description: "Complete academic calendar with all important dates, holidays, and deadlines for the academic year.",
-        category: "schedules",
-        type: "pdf",
-        size: "2.3 MB",
-        url: "#",
-        featured: true
+        title: "Fiche Filières",
+        description: "Présentation des 5 filières de l’EMSI : Présentation de la filière, Objectifs du programme, Options disponibles, Structure du cursus, Débouchés professionnels, Présentation de l’EMSI.",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/drive/folders/1MJuR1LLPVx9Pe5jiPr-LZvwVgq8kit7r?usp=drive_link",
+        featured: false
     },
     {
         id: 2,
-        title: "Student Handbook",
-        description: "Comprehensive guide covering policies, procedures, and resources available to students.",
-        category: "guides",
-        type: "pdf",
-        size: "5.1 MB",
-        url: "#",
-        featured: true
+        title: "Orientation",
+        description: "Guide et présentation des filières, avec aide pour le choix de l’orientation.",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/drive/folders/1NNJnFYP18v1_NWFVaMr2tKY7z4eM1sgk?usp=drive_link",
+        featured: false
     },
     {
         id: 3,
-        title: "Course Registration Form",
-        description: "Official form for course registration and schedule changes.",
-        category: "forms",
-        type: "pdf",
-        size: "1.2 MB",
-        url: "#",
+        title: "Ressources Carrier Center",
+        description: "Guide de carrière fourni par le Centre de Carrière, avec des modèles de CV et de lettres de motivation.",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/drive/folders/1KUdnlfFhrlkdQk4oxpVWS13PojsDfseM?usp=drive_link",
         featured: false
     },
     {
         id: 4,
-        title: "Campus Map",
-        description: "Detailed map of the campus including buildings, parking areas, and facilities.",
-        category: "guides",
-        type: "pdf",
-        size: "3.8 MB",
-        url: "#",
-        featured: true
+        title: "Brochure EMSI",
+        description: "",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/file/d/1sCyxrVC0VdvfxEotqE8_6DonQQWACw-9/view?usp=drive_link",
+        featured: false
     },
     {
         id: 5,
-        title: "Exam Schedule Template",
-        description: "Template for creating and organizing your exam schedule.",
-        category: "schedules",
-        type: "excel",
-        size: "1.2 MB",
-        url: "#",
+        title: "Guide Coursera",
+        description: "Procédure d’inscription sur la plateforme Coursera.",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/file/d/1RBmjkOodIbrcfCb1Hs5bla6LrzVyQDZR/view?usp=drive_link",
         featured: false
     },
     {
         id: 6,
-        title: "Financial Aid Application",
-        description: "Application form for scholarships and financial assistance programs.",
-        category: "forms",
-        type: "pdf",
-        size: "2.1 MB",
-        url: "#",
+        title: "Tutoriel Coursera ",
+        description: "Tutoriel de la procédure d’inscription sur la plateforme Coursera.",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://emsicorp-my.sharepoint.com/personal/a_jade_emsi_ma/_layouts/15/stream.aspx?id=%2Fpersonal%2Fa%5Fjade%5Femsi%5Fma%2FDocuments%2FETUDIANT%20EMSI%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E4ecb4c04%2D0421%2D48aa%2D9782%2D8aaa9bdc3fdd&ga=1",
         featured: false
     },
     {
         id: 7,
-        title: "Study Guide Template",
-        description: "Comprehensive template for organizing study materials and notes.",
-        category: "academic",
-        type: "word",
-        size: "0.8 MB",
-        url: "#",
+        title: "Rapport Mini Projet",
+        description: "",
+        category: "",
+        type: "",
+        size: "",
+        url: "https://drive.google.com/file/d/10VA-3L-S4qJjnWV9plQ_99iM9We4GrDo/view?usp=drive_link",
         featured: false
     },
-    {
-        id: 8,
-        title: "Library Resources Guide",
-        description: "Guide to accessing and using library resources, databases, and services.",
-        category: "guides",
-        type: "pdf",
-        size: "2.7 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 9,
-        title: "Housing Application",
-        description: "Application form for on-campus housing and room assignments.",
-        category: "forms",
-        type: "pdf",
-        size: "1.5 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 10,
-        title: "Academic Integrity Policy",
-        description: "Official policy document on academic integrity and plagiarism guidelines.",
-        category: "academic",
-        type: "pdf",
-        size: "1.8 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 11,
-        title: "Career Services Guide",
-        description: "Comprehensive guide to career services, job search, and professional development.",
-        category: "guides",
-        type: "pdf",
-        size: "4.2 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 12,
-        title: "Transcript Request Form",
-        description: "Official form for requesting academic transcripts and records.",
-        category: "forms",
-        type: "pdf",
-        size: "0.9 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 13,
-        title: "Research Paper Template",
-        description: "Standard template for academic research papers and reports.",
-        category: "academic",
-        type: "word",
-        size: "0.6 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 14,
-        title: "Event Planning Checklist",
-        description: "Comprehensive checklist for planning student events and activities.",
-        category: "guides",
-        type: "pdf",
-        size: "1.4 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 15,
-        title: "Grade Appeal Form",
-        description: "Form for appealing academic grades and requesting grade reviews.",
-        category: "forms",
-        type: "pdf",
-        size: "1.1 MB",
-        url: "#",
-        featured: false
-    },
-    {
-        id: 16,
-        title: "Time Management Planner",
-        description: "Weekly and monthly planner templates for effective time management.",
-        category: "academic",
-        type: "excel",
-        size: "0.7 MB",
-        url: "#",
-        featured: false
-    }
+    
 ];
 
 // DOM Elements
@@ -347,7 +258,7 @@ const resourcesStyles = `
         transition: var(--transition);
         display: flex;
         flex-direction: column;
-        border: 1px solid var(--light-gray);
+        border: 2px solid var(--dark-green); /* dark green outline for resource boxes */
     }
     
     .resource-card:hover {

@@ -2,91 +2,21 @@
 const newsData = [
     {
         id: 1,
-        title: "Welcome to the New Academic Year 2024-2025",
-        summary: "Join us as we kick off another exciting academic year with new initiatives and opportunities for student engagement.",
-        content: "We're thrilled to welcome all students to the new academic year! This year, we have several exciting initiatives planned including enhanced student support services, new community events, and improved communication channels. Our council is committed to representing your interests and ensuring your voice is heard throughout the academic year.",
-        category: "announcements",
-        date: "2024-09-15",
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop",
+        title: "Rentrée Scolaire de l’Année Universitaire 2025/2026",
+        summary: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025.Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
+        content: "Direction Pédagogique: Il est porté à la connaissance des étudiants de la 2ème, 3ème et 4ème Années que la reprise des cours est prévue le Lundi 06/10/2025.Les emplois de Temps seront affichés le Vendredi 03/10/2025.",
+        category: "avis",
+        date: "2025-09-30",
+        image: "https://objective-harlequin-x1dc8kynph.edgeone.app/Frame%20126.png",
         featured: true
     },
-    {
-        id: 2,
-        title: "Student Council Elections - Nominations Open",
-        summary: "Nominations are now open for various student council positions. Make your voice heard by running for office!",
-        content: "The time has come to elect new representatives for the upcoming term. We're looking for passionate students who want to make a difference in our community. Positions available include Class Representatives, Event Coordinators, and Communication Officers. Nomination forms are available at the student affairs office and online.",
-        category: "announcements",
-        date: "2024-09-12",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
-        featured: false
-    },
-    {
-        id: 3,
-        title: "Fall Festival 2024 - Save the Date",
-        summary: "Mark your calendars for our annual Fall Festival featuring food, games, and entertainment for the entire EMSI community.",
-        content: "Join us for our biggest event of the semester! The Fall Festival will feature local food vendors, carnival games, live music, and much more. This is a great opportunity to connect with fellow students, faculty, and staff in a fun, relaxed environment. Admission is free for all EMSI students.",
-        category: "events",
-        date: "2024-09-10",
-        image: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop",
-        featured: true
-    },
-    {
-        id: 4,
-        title: "New Study Spaces Available in Library",
-        summary: "The library has opened new collaborative study spaces equipped with modern technology and comfortable seating.",
-        content: "We're excited to announce the opening of new study spaces in the main library. These areas feature modern technology, comfortable seating, and are designed to support both individual and group study. The spaces are available on a first-come, first-served basis and are open during regular library hours.",
-        category: "updates",
-        date: "2024-09-08",
-        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop",
-        featured: false
-    },
-    {
-        id: 5,
-        title: "Mental Health Awareness Week",
-        summary: "Join us for a week of activities focused on mental health awareness and student wellness resources.",
-        content: "Mental health is a priority for our community. This week, we'll be hosting various activities including workshops, guest speakers, and wellness activities. Learn about available resources, coping strategies, and how to support your peers. All activities are free and open to all students.",
-        category: "events",
-        date: "2024-09-05",
-        image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
-        featured: false
-    },
-    {
-        id: 6,
-        title: "Updated Academic Calendar Available",
-        summary: "The updated academic calendar for the fall semester is now available with all important dates and deadlines.",
-        content: "Please review the updated academic calendar which includes all important dates, deadlines, and holidays for the fall semester. Key dates include midterm exams, registration periods, and semester breaks. The calendar is available in both digital and print formats.",
-        category: "updates",
-        date: "2024-09-03",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
-        featured: false
-    },
-    {
-        id: 7,
-        title: "Student Feedback Survey Results",
-        summary: "Thank you to all students who participated in our recent feedback survey. Here are the results and our action plan.",
-        content: "We received over 300 responses to our student feedback survey. The results show strong satisfaction with most services, with areas for improvement identified in communication and event planning. We're implementing several changes based on your feedback, including a new communication app and more diverse event programming.",
-        category: "updates",
-        date: "2024-08-30",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-        featured: false
-    },
-    {
-        id: 8,
-        title: "Career Fair 2024 - Registration Open",
-        summary: "Registration is now open for our annual career fair featuring top employers and networking opportunities.",
-        content: "Don't miss this opportunity to connect with potential employers and explore career opportunities. The career fair will feature companies from various industries, resume review sessions, and networking workshops. Early registration is recommended as spaces are limited.",
-        category: "events",
-        date: "2024-08-28",
-        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&h=400&fit=crop",
-        featured: true
-    }
+    
 ];
 
 // DOM Elements
 const newsGrid = document.getElementById('newsGrid');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const loadMoreBtn = document.getElementById('loadMoreBtn');
-const newsModal = document.getElementById('newsModal');
 const closeModal = document.getElementById('closeModal');
 
 // State
@@ -96,17 +26,17 @@ const newsPerLoad = 6;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    renderNews();
     initFilters();
     initModal();
     initLoadMore();
+    renderNews(); // Load the first 6 news automatically on page load
 });
 
 // Render news items
 function renderNews() {
     const filteredNews = getFilteredNews();
     const newsToShow = filteredNews.slice(0, displayedNews);
-    
+                category: "notes",
     newsGrid.innerHTML = '';
     
     newsToShow.forEach(news => {
@@ -131,10 +61,15 @@ function createNewsCard(news) {
     const formattedDate = formatDate(news.date);
     const categoryClass = `category-${news.category}`;
     
+    // Map category to display label
+    let categoryLabel = news.category;
+    if (news.category === 'notes') categoryLabel = 'Notes';
+    else if (news.category === 'avis') categoryLabel = 'Avis aux Étudiants';
+    else if (news.category === 'miseajour') categoryLabel = 'Mise à Jour';
     card.innerHTML = `
         <div class="news-image">
             <img src="${news.image}" alt="${news.title}" loading="lazy">
-            <div class="news-category ${categoryClass}">${news.category}</div>
+            <div class="news-category ${categoryClass}">${categoryLabel}</div>
         </div>
         <div class="news-content">
             <h3 class="news-title">${news.title}</h3>
@@ -218,7 +153,12 @@ function openModal(newsId) {
     // Populate modal content
     document.getElementById('modalTitle').textContent = news.title;
     document.getElementById('modalDate').textContent = formatDate(news.date);
-    document.getElementById('modalCategory').textContent = news.category;
+    // Map category to display label for modal
+    let modalCategoryLabel = news.category;
+    if (news.category === 'notes') modalCategoryLabel = 'Notes';
+    else if (news.category === 'avis') modalCategoryLabel = 'Avis aux Étudiants';
+    else if (news.category === 'miseajour') modalCategoryLabel = 'Mise à Jour';
+    document.getElementById('modalCategory').textContent = modalCategoryLabel;
     document.getElementById('modalText').innerHTML = `<p>${news.content}</p>`;
     
     // Set modal image
@@ -360,17 +300,17 @@ const newsStyles = `
         letter-spacing: 0.5px;
     }
     
-    .category-announcements {
+    .category-announcements, .category-avis {
         background: var(--primary-green);
         color: var(--white);
     }
     
-    .category-events {
+    .category-events, .category-notes {
         background: #ff6b35;
         color: var(--white);
     }
     
-    .category-updates {
+    .category-updates, .category-miseajour {
         background: #4a90e2;
         color: var(--white);
     }

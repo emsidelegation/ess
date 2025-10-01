@@ -410,7 +410,7 @@ body {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border: 1px solid var(--light-gray);
+    border: 2px solid var(--dark-green); /* dark green outline for boxes */
 }
 
 .card:hover {

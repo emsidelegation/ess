@@ -5,7 +5,7 @@ const servicesData = [
         title: "EMSI StudyHub",
         description: "La plus grande archive EMSI. Un hub central pour tout ce dont vous avez besoin : documents, corrections, examens et bien plus encore.",
         category: "academique",
-        url: "#",
+        url: "https://studyhub.emsi.info",
         icon: "fas fa-graduation-cap",
         featured: false
     },
@@ -14,7 +14,7 @@ const servicesData = [
         title: "EMSI Connect",
         description: "Le réseau des étudiants EMSI où vous pouvez trouver des étudiants qui partagent vos besoins : logement, campus ou classes.",
         category: "communaute",
-        url: "#",
+        url: "https://connect.emsi.info",
         icon: "fas fa-book",
         featured: false
     },
@@ -32,7 +32,7 @@ const servicesData = [
         title: "EMSI DELEGATION",
         description: "comming soon",
         category: "delegation",
-        url: "#",
+        url: "https://delegation.emsi.info",
         icon: "fas fa-clipboard-list",
         featured: false
     },
@@ -41,7 +41,7 @@ const servicesData = [
         title: "EMSI LEVEL UP",
         description: "Si vous avez besoin d’aide pour vos études ou que vous rencontrez des lacunes dans certaines matières, le programme de tutorat EMSI LEVEL UP est là pour vous accompagner.",
         category: "academique",
-        url: "#",
+        url: "https://levelup.emsi.info",
         icon: "fas fa-user-graduate",
         featured: false
     },

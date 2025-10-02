@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyer | EMSI CONNECT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="loyer1.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+  <header class="header" style="width:100%; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+    <div class="header-new" style="display:flex; align-items:center; justify-content:center; width:100%; min-height:70px; background:#0a2212;">
+      <!-- Logo -->
+      <a href="index1.html" class="logo-section" id="logoSection" style="cursor:pointer; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="assets2/logo.png" alt="EMSI CRC Logo" class="logo-image" style="height:48px; width:auto;">
+          </div>
+        </div>
+      </a>
+      <!-- Contact Button (hidden for unified header) -->
+      <div class="contact-header-button" style="margin-left:18px; display:none;">
+        <a href="mailto:contact@emsi.info?subject=Report an Issue or Suggestion" class="report-button" aria-label="Report an issue or suggestion" style="padding:8px 18px; background:#0a2212; color:#fff; border-radius:6px; font-weight:500; text-decoration:none; font-size:1em; border:1px solid #fff;">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<!-- Main Content Container -->
+    <div class="container mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-10 my-8 flex-grow">
+        
+        <!-- Header -->
+        <header class="text-center mb-8 flex flex-col items-center">
+            <!-- J'ai remplacé l'image par un espace vide -->
+            <div class="h-24 w-24 mb-4"></div>
+            <h1 class="text-3xl font-bold text-green-800 mb-2">EMSI Logements Étudiants</h1>
+            <p class="text-gray-600">Trouvez ou proposez un logement pour les étudiants de l'EMSI.</p>
+        </header>
+        
+        <!-- Status Message Display -->
+        <div id="status-message" class="hidden mb-4 p-4 text-center rounded-lg text-sm font-medium" role="alert"></div>
+
+        <!-- Submission Form -->
+        <div class="mb-10 p-6 bg-white rounded-xl border border-green-200 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Publier une annonce de logement</h2>
+            <form id="request-form" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="prenom" class="block text-sm font-medium text-gray-700">Prénom</label>
+                        <input type="text" id="prenom" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+                    </div>
+                    <div>
+                        <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+                        <input type="text" id="nom" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="niveau" class="block text-sm font-medium text-gray-700">Niveau et filière</label>
+                        <input type="text" id="niveau" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+                    </div>
+          <div>
+            <label for="ville" class="block text-sm font-medium text-gray-700">Ville</label>
+            <select id="ville" name="ville" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+              <option value="">Sélectionnez une ville</option>
+              <option value="TANGER">TANGER</option>
+              <option value="RABAT">RABAT</option>
+              <option value="MARRAKECH">MARRAKECH</option>
+              <option value="CASABLANCA">CASABLANCA</option>
+              <option value="FES">FES</option>
+            </select>
+          </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="campus" class="block text-sm font-medium text-gray-700">Campus</label>
+            <select id="campus" name="campus" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+              <option value="">Sélectionnez un campus</option>
+            </select>
+          </div>
+                    <div>
+                        <label for="type_logement" class="block text-sm font-medium text-gray-700">Type de logement</label>
+                        <select id="type_logement" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+                            <option value="">Sélectionnez un type</option>
+                            <option value="Appartement">Appartement</option>
+                            <option value="Chambre">Chambre</option>
+                            <option value="Studio">Studio</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="prix" class="block text-sm font-medium text-gray-700">Prix (par mois)</label>
+                    <input type="number" id="prix" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border" min="0">
+                </div>
+                <div>
+                    <label for="description" class="block text-sm font-medium text-gray-700">Description de l'annonce</label>
+                    <textarea id="description" rows="3" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border"></textarea>
+                </div>
+                <div>
+                    <label for="numero" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+                    <input type="tel" id="numero" required class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+                </div>
+
+                <div class="flex space-x-2">
+                    <button id="submit-btn" type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-green-700 transition duration-200 flex items-center justify-center">
+                        <span id="submit-text">Publier</span>
+                        <div id="submit-spinner" class="spinner hidden ml-2"></div>
+                    </button>
+                    <button type="button" id="clear-form-btn" class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-gray-300 transition duration-200">
+                        Effacer
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Announcement Section -->
+        <div class="mb-10 p-6 text-center rounded-xl bg-green-100 border-green-300 border shadow-md">
+            <p class="text-green-800 font-semibold text-lg mb-2">
+                Aidez-nous à trouver plus de logements!
+            </p>
+            <p class="text-green-700 mb-4">
+                Partagez ce lien dans les groupes de vos classes pour que tous les étudiants
+                qui recherchent un logement puissent poster leur annonce rapidement.
+            </p>
+            <button id="copy-link-btn" class="bg-green-600 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-green-700 transition duration-200">
+                <i class="fas fa-link mr-2"></i> Copier le lien
+            </button>
+        </div>
+
+        <!-- Find Housing Section -->
+        <div class="mb-10 p-6 bg-white rounded-xl border border-green-200 shadow-md">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Trouver un logement</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+          <label for="searchVille" class="block text-sm font-medium text-gray-700">Rechercher par Ville</label>
+          <select id="searchVille" name="searchVille" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+            <option value="">Sélectionnez une ville</option>
+            <option value="TANGER">TANGER</option>
+            <option value="RABAT">RABAT</option>
+            <option value="MARRAKECH">MARRAKECH</option>
+            <option value="CASABLANCA">CASABLANCA</option>
+            <option value="FES">FES</option>
+          </select>
+                </div>
+                <div>
+          <label for="searchCampus" class="block text-sm font-medium text-gray-700">Rechercher par Campus</label>
+          <select id="searchCampus" name="searchCampus" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring-green-500 p-2 border">
+            <option value="">Sélectionnez un campus</option>
+          </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Existing Requests Section -->
+        <div>
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Annonces de logement existantes</h2>
+            <div id="requests-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div id="loading-requests" class="col-span-1 md:col-span-2 text-center text-gray-500 p-8">Chargement des annonces...</div>
+            </div>
+        </div>
+
+        <!-- Custom Message Box -->
+        <div id="message-box" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden items-center justify-center p-4">
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center max-w-sm w-full">
+                <p id="message-text" class="text-lg font-medium text-gray-800 mb-4"></p>
+                <button id="message-ok-btn" class="bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 transition duration-200">
+                    OK
+                </button>
+            </div>
+        </div>
+        
+    </div>
+  
+
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="https://portail.emsi.ac.ma/auth">Portail Étudiant</a></li>
+                        <li><a href="http://linktr.ee/emsidelegation">EMSI Communities</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScDYOPC-nWKhyRlsH7Rp6MLEiXbtS9OVIrik3i08L8Nz8G7Ww/viewform">Demander un Tuteur</a></li>
+                        <li><a href="https://emsicommunity.com">Career Center</a></li>
+                        <li><a href="https://www.emsi.ma">emsi.ma</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                     <h4>Navigation</h4>
+                    <ul>
+                     <li><a href="index1.html">Home</a></li>
+                     <li><a href="loyer1.html">Loyer</a></li>
+                     <li><a href="echange1.html">Échange de Campus</a></li>
+                     <li><a href="echange2.html">Échange de Groupe</a></li>
+                     <li><a href="mailto:contact@emsi.info">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                         <li><a href="#">EMSI StudyHub</a></li>
+                         <li><a href="#">EMSI Connect</a></li>
+                         <li><a href="#">EMSI DELEGATION</a></li>
+                         
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/emsidelegation" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/emsidelegation/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://chat.whatsapp.com/LjNXaDGZ1tMCyEWBU4r1Vo" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> EMSI CLASS REPRESENTATIVES COUNCIL</p>
+                <p> by students for students</p>
+                <p class="developer-credits">Developed by <a href="https://www.linkedin.com/in/aymane-fakihi-9a3435335/" target="_blank" rel="noopener noreferrer">AYMANE FAKIHI</a> and <a href="https://www.linkedin.com/in/yezziani/" target="_blank" rel="noopener noreferrer">YASSINE EZZIANI</a></p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="loyer1.js"></script>
+</body>
+</html>

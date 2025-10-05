@@ -38,7 +38,7 @@ const servicesData = [
     },
     {
         id: 5,
-        title: "EMSI LEVEL UP",
+        title: "EMSI LEVEL UP - Programme de Tutorat EMSI Casablanca",
         description: "Si vous avez besoin d’aide pour vos études ou que vous rencontrez des lacunes dans certaines matières, le programme de tutorat EMSI LEVEL UP est là pour vous accompagner.",
         category: "academique",
         url: "https://levelup.emsi.info",

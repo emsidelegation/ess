@@ -20,6 +20,17 @@ const newsData = [
         image: "/assets/news1.png",
         featured: true
     },
+
+     {
+        id: 3,
+        title: "Message Urgent – Élection des Délégués de Classe",
+        summary: "Avec la nouvelle rentrée universitaire, nous invitons urgemment les étudiants à élire leurs délégués de classe et à rejoindre leur communauté respective afin de faire de cette année un véritable succès. Choisir des représentants responsables et engagés est la clé pour construire une communauté collaborative et solidaire. Des ressources utiles sont disponibles sur delegation.emsi.info pour vous guider dans le processus.",
+        content: "Avec la nouvelle rentrée universitaire, nous invitons urgemment les étudiants à élire leurs délégués de classe et à rejoindre leur communauté respective afin de faire de cette année un véritable succès. Choisir des représentants responsables et engagés est la clé pour construire une communauté collaborative et solidaire. Des ressources utiles sont disponibles sur delegation.emsi.info pour vous guider dans le processus.",
+        category: "avis",
+        date: "2025-10-06",
+        image: "/assets/news1.png",
+        featured: true
+    },
     
 ];
 

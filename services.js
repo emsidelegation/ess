@@ -39,7 +39,9 @@ const servicesData = [
     {
         id: 5,
         title: "EMSI LEVEL UP - Programme de Tutorat EMSI Casablanca",
-        description: "Si vous avez besoin d’aide pour vos études ou que vous rencontrez des lacunes dans certaines matières, le programme de tutorat EMSI LEVEL UP est là pour vous accompagner.",
+        description: "EMSI LEVEL UP est un programme de tutorat collaboratif mis en place par
+le Learning Center EMSI Casablanca, visant à maximiser la performance académique, encourager
+l'entraide entre étudiants et accompagner chaque étudiant vers la réussite.",
         category: "academique",
         url: "https://levelup.emsi.info",
         icon: "fas fa-user-graduate",

@@ -30,7 +30,7 @@ const servicesData = [
     {
         id: 4,
         title: "EMSI DELEGATION",
-        description: "comming soon",
+        description: "La plateforme des Délégués de Classe: un espace où sont partagées des ressources utiles et des guides pour assurer la bonne représentation des étudiants.",
         category: "delegation",
         url: "https://delegation.emsi.info",
         icon: "fas fa-clipboard-list",

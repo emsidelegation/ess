@@ -10,6 +10,16 @@ const newsData = [
         image: "/assets/news1.png",
         featured: true
     },
+    {
+        id: 2,
+        title: "Bonne Rentrée Universitaire 2025/2026",
+        summary: "Le Conseil des Délégués de Classe vous souhaite une excellente rentrée universitaire! Nous espérons que ce nouveau semestre sera pour vous synonyme de réussite, d’ambition et de collaboration. Cette année s’annonce riche en initiatives impactantes et en projets collaboratifs visant à accompagner chaque étudiant dans son parcours à l’EMSI. Ensemble, nous continuerons à bâtir une communauté unie, dynamique et engagée. Un communiqué complet sur le début du semestre sera publié d’ici la fin de la semaine. Bonne rentrée à toutes et à tous!",
+        content: "Le Conseil des Délégués de Classe vous souhaite une excellente rentrée universitaire! Nous espérons que ce nouveau semestre sera pour vous synonyme de réussite, d’ambition et de collaboration. Cette année s’annonce riche en initiatives impactantes et en projets collaboratifs visant à accompagner chaque étudiant dans son parcours à l’EMSI. Ensemble, nous continuerons à bâtir une communauté unie, dynamique et engagée. Un communiqué complet sur le début du semestre sera publié d’ici la fin de la semaine. Bonne rentrée à toutes et à tous!",
+        category: "avis",
+        date: "2025-10-06",
+        image: "/assets/news1.png",
+        featured: true
+    },
     
 ];
 
